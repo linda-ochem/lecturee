@@ -28,7 +28,7 @@ stages:
     pool:
       name: aws-agent
       demands:
-        - agent.name -equals aws-agent-pool
+        - agent.name -equals ip-172-31-28-214
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
